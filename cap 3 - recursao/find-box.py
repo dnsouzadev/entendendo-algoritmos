@@ -8,16 +8,12 @@ def procure_pela_chave(caixa):
         elif item == "chave":
             print("Chave encontrada!")
 
-
 # Exemplo de uso:
 caixas = [
     "papel",
-    ["clips", ["chavex"], "elástico"],
+    ["clips", ["chaves", "chave"], "elástico"],
     "caneta",
     ["fita", "tesoura"]
 ]
 
-if procure_pela_chave(caixas):
-    print("Chave encontrada!")
-else:
-    print("Chave não encontrada.")
+procure_pela_chave(caixas)
